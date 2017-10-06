@@ -14,5 +14,5 @@ Did you see a green bar?
 
 Ask your teacher to explain: 
 assertEquals(Object, Object);
-assertFalse(Object);
+assertFalse(object);
 assertTrue(Object);
