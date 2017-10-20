@@ -41,42 +41,30 @@ public class SearchingAndSortingAlgorithms {
 	}
 
 	/* 4. Create a method that will find the longest word. */
-	// @Test
-	// public void testFindMaxiumumString() throws Exception {
-	// List<String> words = Arrays.asList(new String[] { "accoutrements", "acumen",
-	// "anomalistic", "auspicious", "bellwether",
-	// "callipygian", "circumlocution", "concupiscent", "conviviality", "coruscant",
-	// "cuddlesome", "cupidity", "cynosure",
-	// "ebullient", "equanimity", "excogitate", "gasconading", "idiosyncratic",
-	// "luminescent", "magnanimous", "nidificate",
-	// "osculator", "parsimonious", "penultimate", "perfidiousness",
-	// "perspicacious", "proficuous", "remunerative", "saxicolous",
-	// "sesquipedalian", "superabundant", "unencumbered", "unparagoned", "usufruct",
-	// });
-	// assertEquals("circumlocution", Algorithms.findLongestWord(words));
-	// }
+	@Test
+	public void testFindMaxiumumString() throws Exception {
+		List<String> words = Arrays.asList(new String[] { "accoutrements", "acumen", "anomalistic", "auspicious",
+				"bellwether", "callipygian", "circumlocution", "concupiscent", "conviviality", "coruscant",
+				"cuddlesome", "cupidity", "cynosure", "ebullient", "equanimity", "excogitate", "gasconading",
+				"idiosyncratic", "luminescent", "magnanimous", "nidificate", "osculator", "parsimonious", "penultimate",
+				"perfidiousness", "perspicacious", "proficuous", "remunerative", "saxicolous", "sesquipedalian",
+				"superabundant", "unencumbered", "unparagoned", "usufruct", });
+		assertEquals("circumlocution", Algorithms.findLongestWord(words));
+	}
 
 	/*
 	 * 5. The Morse code for SOS is "... --- ..." Create a method that can tell if
 	 * SOS is contained in a message.
 	 */
-	// @Test
-	// public void testFindString() throws Exception {
-	// List<String> message1 = Arrays.asList(".... . .-. .-. --- / ... --- ... /
-	// -.-- .- .-.. .-.. ...".split("/"));
-	// assertEquals(true, Algorithms.containsSOS(message1));
-	// List<String> message2 = Arrays
-	// .asList(".-- .. - .... / - .... . / .-.. .. --. .... - ... / --- ..- - --..--
-	// / .. - .----. ... / .-.. . ... ... / -.. .- -. --. . .-. --- ..- ... / .... .
-	// .-. . / .-- . / .- .-. . / -. --- .-- ? / . -. - . .-. - .- .. -. / ..- ... /
-	// .. / ..-. . . .-.. / ... - ..- .--. .. -.. / .- -. -.. / -.-. --- -. - .- --.
-	// .. --- ..- ... / .... . .-. . / .-- . / .- .-. . / -. --- .-- ? / . -. - .
-	// .-. - .- .. -. / ..- ... / .- / -- ..- .-.. .- - - --- --..-- / .- -. / .-
-	// .-.. -... .. -. --- --..-- / .- / -- --- ... --.- ..- .. - --- --..-- / --
-	// -.-- / .-.. .. -... .. -.. --- / -.-- . .- .... --..-- / .... . -.-- / -.-- .
-	// .- ....".split("/"));
-	// assertEquals(false, Algorithms.containsSOS(message2));
-	// }
+	@Test
+	public void testFindString() throws Exception {
+		List<String> message1 = Arrays.asList(".... . .-. .-. --- / ... --- ... / -.-- .- .-.. .-.. ...".split("/"));
+		assertEquals(true, Algorithms.containsSOS(message1));
+		List<String> message2 = Arrays.asList(
+				".-- .. - .... / - .... . / .-.. .. --. .... - ... / --- ..- - --..--/ .. - .----. ... / .-.. . ... ... / -.. .- -. --. . .-. --- ..- ... / .... ..-. . / .-- . / .- .-. . / -. --- .-- ? / . -. - . .-. - .- .. -. / ..- ... /.. / ..-. . . .-.. / ... - ..- .--. .. -.. / .- -. -.. / -.-. --- -. - .- --... --- ..- ... / .... . .-. . / .-- . / .- .-. . / -. --- .-- ? / . -. - ..-. - .- .. -. / ..- ... / .- / -- ..- .-.. .- - - --- --..-- / .- -. / .-.-.. -... .. -. --- --..-- / .- / -- --- ... --.- ..- .. - --- --..-- / ---.-- / .-.. .. -... .. -.. --- / -.-- . .- .... --..-- / .... . -.-- / -.-- ..- ...."
+						.split("/"));
+		assertEquals(false, Algorithms.containsSOS(message2));
+	}
 
 	/* 6. Write a morse code translator to read the messages. Just kidding! */
 
