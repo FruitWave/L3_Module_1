@@ -60,4 +60,45 @@ public class Algorithms {
 		return false;
 
 	}
+
+	public static List<Double> sortScores(List<Double> results) {
+		for (int i = 0; i < results.size(); i++) {
+			for (int j = i + 1; j < results.size(); j++) {
+				if (results.get(j) < results.get(i)) {
+					double tempstore = results.get(j);
+					results.set(j, results.get(i));
+					results.set(i, tempstore);
+				}
+			}
+		}
+		return results;
+	}
+
+	public static List<String> sortDNA(List<String> unsortedSequences) {
+		for (int i = 0; i < unsortedSequences.size(); i++) {
+			for (int j = i + 1; j < unsortedSequences.size(); j++) {
+				if (unsortedSequences.get(j).length() < unsortedSequences.get(i).length()) {
+					String tempstore = unsortedSequences.get(j);
+					unsortedSequences.set(j, unsortedSequences.get(i));
+					unsortedSequences.set(i, tempstore);
+				}
+			}
+		}
+		return unsortedSequences;
+	}
+
+	public static List<String> sortWords(List<String> words) {
+		for (int i = 0; i < words.size(); i++) {
+			for (int j = i + 1; j < words.size(); j++) {
+
+				if (words.get(j).compareTo(words.get(i)) < 0) {
+					String tempstore = words.get(j);
+					words.set(j, words.get(i));
+					words.set(i, tempstore);
+				}
+			}
+		}
+		System.out.println(words);
+		return words;
+	}
 }
